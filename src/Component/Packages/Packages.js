@@ -100,6 +100,10 @@ import Footer from '../Footer/Footer';
 import InputFiled from '../Input/InputFiled';
 import { Link } from 'react-router-dom';
 const Packages = () => {
+    const scrollToTop = () =>
+    {
+        window.scrollTo(0,0)
+    }
     return (
         <section>
             <div className=''>
@@ -110,7 +114,7 @@ const Packages = () => {
                 </div>
                 <div className='lg:pt-16'>
                     <div className='grid lg:grid-cols-4 md:grid-cols-2 mt-2  md:p-10 lg:pt-5 gap-8 lg:gap-0 '>
-                        <Link to="/Amorous-Zurich">  <div className='box rounded-lg mx-auto cursor-pointer'>
+                        <Link to="/Amorous-Zurich">  <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer'>
                             <div className='mt-36 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>6N / 7D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Switzerland Holiday Package</h1>
@@ -119,7 +123,7 @@ const Packages = () => {
                             <img src={swiss3} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Amorous-Zurich">   <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Amorous-Zurich">   <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-36  ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>7N / 8D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Switzerland Holiday Package</h1>
@@ -128,7 +132,7 @@ const Packages = () => {
                             <img src={swiss} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Amorous-Zurich">  <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Amorous-Zurich">  <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-36 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>9N / 10D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Switzerland Holiday Package</h1>
@@ -137,7 +141,7 @@ const Packages = () => {
                             <img src={swiss1} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Amorous-Zurich">    <div className='box rounded-lg mx-auto lg:mb-12 cursor-pointer'>
+                        <Link to="/Amorous-Zurich">    <div onClick={scrollToTop} className='box rounded-lg mx-auto lg:mb-12 cursor-pointer'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>6N / 7D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Paris & Switzerland Holiday Package</h1>
@@ -147,7 +151,7 @@ const Packages = () => {
                         </div></Link>
 
 
-                        <Link to="/Charming-Paris"  >   <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Charming-Paris"  >   <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>7N / 8D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Paris & Switzerland Holiday Package</h1>
@@ -156,7 +160,7 @@ const Packages = () => {
                             <img src={paris1} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Charming-Paris"  >     <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Charming-Paris"  >     <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>9N / 10D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Amstreadam,Paris & Swiss Holiday Package</h1>
@@ -165,7 +169,7 @@ const Packages = () => {
                             <img src={paris2} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Charming-Paris"  >      <div className='box rounded-lg mx-auto lg:mb-12 cursor-pointer'>
+                        <Link to="/Charming-Paris"  >      <div onClick={scrollToTop} className='box rounded-lg mx-auto lg:mb-12 cursor-pointer'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>6N / 7D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Amstreadam & Paris Holiday Package</h1>
@@ -174,7 +178,7 @@ const Packages = () => {
                             <img src={ams1} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Charming-Paris"  >     <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Charming-Paris"  >     <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>11N / 12D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Paris,Swiss & Italy Holiday Package</h1>
@@ -183,7 +187,7 @@ const Packages = () => {
                             <img src={paris1} className='box-image' />
                         </div></Link>
 
-                        <Link to="/Charming-Paris"  >     <div className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                        <Link to="/Charming-Paris"  >     <div onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
                             <div className='mt-40 ml-5'>
                                 <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>12N / 13D</p>
                                 <h1 className='text-[22px]  font-light mt-2   text-white'>Paris, Swiss & Italy Holiday Package</h1>
