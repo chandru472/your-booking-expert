@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.box{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.box-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: all 0.5s;
+    z-index: -1;
+
+}
+.box:hover img{
+    transform: scale(1.2);
+    filter: brightness(0.6);
+}
+.box_1{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_1-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: all 0.5s;
+    z-index: -1;
+
+}
+.box_1:hover img{
+    transform: scale(1.2);
+    filter: brightness(0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  @media (max-width:600px) {
+    .box_1{
+      width: 85%;
+      height: 325px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+      margin-left: 1.9rem;   }
+     
+      .box{
+        height: 300px;
+        width: 70%;
+        margin-top: 2rem;
+        overflow: hidden;
+        position: relative;
+    }
+     }
+     .embla {
+        overflow: hidden;
+        width: 117%;
+        height: 28rem;
+      }
+      .embla__container {
+        display: flex;
+      }
+      .embla__slide {
+        flex: 0 0 100%;
+      }
+      @media (max-width:600px) {
+        .embla {
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+        }
+      }
+      @media (min-width:600px) and (max-width:950px) {
+        .embla {
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+        }
+      }
