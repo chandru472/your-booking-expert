@@ -26,8 +26,8 @@ const Best = () => {
     return (
         <div>
             <div className=' grid lg:grid-cols-4 md:grid-cols-2 mt-2  md:p-10 lg:pt-5 gap-8 lg:gap-0'>
-                <Link to="/best-selling/wonderful-netherlands"><div data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/best-selling/wonderful-netherlands"><div data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Wonderful Netherlands Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 -mt-3 px-2'>from ₹ 5000</p>
@@ -35,8 +35,8 @@ const Best = () => {
                     <img src={Netherlands4} className='box-image' />
                 </div></Link>
 
-                <Link to="/Fabulous-Belgium">  <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Fabulous-Belgium">  <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" onClick={scrollToTop} className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Fabulous Belgium Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -44,8 +44,8 @@ const Best = () => {
                     <img src={Belgium1} className='box-image' />
                 </div></Link>
 
-                <Link to="/Exotic-Prague"><div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Exotic-Prague"><div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Exotic Prague Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -53,16 +53,16 @@ const Best = () => {
                     <img src={Czech} className='box-image' />
                 </div></Link>
 
-                <Link to="/Astonishing-Turkey"> <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="900" className='box rounded-lg mx-auto md:mb-12 cursor-pointer '>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Astonishing-Turkey"> <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="700" data-aos-duration="900" className='box rounded-lg mx-auto md:mb-12 cursor-pointer '>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Astonishing Turkey Family Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 -mt-3  px-2'>from ₹ 5000</p>
                     </div>
                     <img src={turkey3} className='box-image' />
                 </div></Link>
-                <Link to="/Amazing-Santorini" ><div data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-36 ml-5'>
+                <Link to="/Amazing-Santorini" ><div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-36 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Amazing Santorini Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-end my-auto mr-5   px-2'>from ₹ 5000</p>
@@ -70,8 +70,8 @@ const Best = () => {
                     <img src={Santorini1} className='box-image' />
                 </div></Link>
 
-                <Link to="/Travel-Packages" > <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Travel-Packages" > <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>3N / 4D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Rejuvenating Paris</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -79,8 +79,8 @@ const Best = () => {
                     <img src={paris1} className='box-image' />
                 </div></Link>
 
-                <Link to="/Amorous-Zurich"> <div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Amorous-Zurich"> <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Amorous Zurich Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -88,8 +88,8 @@ const Best = () => {
                     <img src={swiss1} className='box-image' />
                 </div></Link>
 
-                <Link to="/Moscow-Tour"> <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="900"  className='box rounded-lg mx-auto md:mb-12 cursor-pointer '>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Moscow-Tour"> <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="700" data-aos-duration="900"  className='box rounded-lg mx-auto md:mb-12 cursor-pointer '>
+                    <div className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Moscow Tour Package</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -97,8 +97,8 @@ const Best = () => {
                     <img src={Moscow2} className='box-image' />
                 </div></Link>
 
-                <Link to="/Charming-Paris"  > <div data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Charming-Paris"  > <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>3N / 4D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Charming Paris</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -106,8 +106,8 @@ const Best = () => {
                     <img src={paris2} className='box-image' />
                 </div></Link>
 
-                <Link to="/Karismatic-Kerela" > <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" className='box rounded-lg mx-auto cursor-pointer'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Karismatic-Kerela" > <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="500" data-aos-duration="700" className='box rounded-lg mx-auto cursor-pointer'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>5N / 6D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Karismatic Kerela</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -115,8 +115,8 @@ const Best = () => {
                     <img src={kerala5} className='box-image' />
                 </div></Link>
 
-                <Link to="/Best-of-orissa"><div data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
-                    <div onClick={scrollToTop} className='mt-40 ml-5'>
+                <Link to="/Best-of-orissa"><div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="600" data-aos-duration="800" className='box rounded-lg mx-auto cursor-pointer md:mb-12'>
+                    <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>5N / 6D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Best of Orissa</h1>
                         <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
@@ -124,7 +124,7 @@ const Best = () => {
                     <img src={orissa1} className='box-image' />
                 </div></Link>
 
-                <div data-aos="fade-right" data-aos-delay="700" data-aos-duration="900" className='box rounded-lg mx-auto md:mb-12cursor-pointer md:mb-12'>
+                <div onClick={scrollToTop} data-aos="fade-right" data-aos-delay="700" data-aos-duration="900" className='box rounded-lg mx-auto md:mb-12cursor-pointer md:mb-12'>
                     <div onClick={scrollToTop} className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>4N / 5D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Glimpse of Andaman</h1>
