@@ -110,7 +110,7 @@ const Hero = () => {
                 <video className='max-sm:hidden absolute inset-0  z-0 video  lg:mt-0 mt-16 w-full md:h-[55rem] h-[18.5rem] object-cover' autoPlay muted loop>
                     <source src={bgvideo}  type='video/mp4'></source>
                 </video>
-                <img src={ram} alt='ram' className='sm:hidden absolute inset-0 mt-16'/>
+                <img data-aos="zoom-in"  data-aos-duration="2000" src={ram} alt='ram' className='sm:hidden absolute inset-0 mt-16'/>
                 <div className=' mx-auto relative z-10 '>
                     <Navbar />
                     <div data-aos="zoom-in"  data-aos-duration="2000"  className='max-sm:pt-32 lg:pt-40 md:pt-32 pt-36 md:px-10 px-3.5 text-center  ' style={{ fontFamily: '"League spartan",sans-serif' }}>
