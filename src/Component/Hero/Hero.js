@@ -19,6 +19,10 @@ import Destination from '../Destination/Destination';
 import { Link } from 'react-router-dom';
 import ram from '../../Assets/ram.jpg';
 const Hero = () => {
+    const scrollToTop = () =>
+    {
+        window.scrollTo(0,0)
+    }
     const [user, setUser] = useState({
         Name: '',
         Email: '',
@@ -211,15 +215,15 @@ const Hero = () => {
                     <h1 className='text-center text-[#2976b6] font-bold lg:text-3xl text-lg'>Choose Your Region</h1>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000" className='md:flex flex-wrap justify-center md:gap-14 mt-5 mb-20 md:p-10'>
-                    <Link to="/Asian-Countries"> <div className='box_1 rounded-lg cursor-pointer'>
+                    <Link to="/Asian-Countries"> <div onClick={scrollToTop} className='box_1 rounded-lg cursor-pointer'>
                         <h1 className='text-2xl font-semibold text-white'>Asia</h1>
                         <img src={asia} className='box-image' />
                     </div></Link>
-                    <Link to="/Europe"><div className='box_1 rounded-lg cursor-pointer'>
+                    <Link to="/Europe"><div onClick={scrollToTop} className='box_1 rounded-lg cursor-pointer'>
                         <h1 className='text-2xl font-semibold text-white'>Europe</h1>
                         <img src={european} className='box-image' />
                     </div></Link>
-                    <Link to="Middle-East"><div className='box_1 rounded-lg cursor-pointer'>
+                    <Link to="Middle-East"><div onClick={scrollToTop} className='box_1 rounded-lg cursor-pointer'>
                         <h1 className='text-2xl font-semibold text-white'>Dubai</h1>
                         <img src={dubai4} className='box-image' />
                     </div></Link>

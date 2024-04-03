@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
+    const scrollToTop = () =>
+    {
+        window.scrollTo(0,0)
+    }
+
     const menuClick = () => {
         var menu = document.getElementById('mobileMenu');
         if (menu.classList.contains('hidden')) {
@@ -26,10 +31,10 @@ const Navbar = () => {
                     </div >
                     <div className='mx-auto my-auto lg:block  hidden '>
                         <ul className='flex lg:gap-12 font-semibold tracking-wide text-[#2976b6]  ml-96'>
-                            <Link to="/best-selling"><li data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Best Selling</li></Link>
-                            <Link to="/Packages" ><li data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Packages</li></Link>
+                            <Link to="/best-selling"><li onClick={scrollToTop} data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Best Selling</li></Link>
+                            <Link to="/Packages" ><li onClick={scrollToTop} data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Packages</li></Link>
                             <HashLink smooth to="/#OurDestination"><li data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Destination</li></HashLink>
-                            <Link to="/Contact-us"><li data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Contact Us</li></Link>
+                            <Link to="/Contact-us"><li onClick={scrollToTop} data-aos="flip-right" data-aos-duration="1500" className='cursor-pointer hover:scale-110 duration-300'>Contact Us</li></Link>
                         </ul>
                     </div>
                     <div data-aos="flip-right" data-aos-duration="1500" className='bg-[#2976b6] mr-14 w-52 lg:block  hidden '>
