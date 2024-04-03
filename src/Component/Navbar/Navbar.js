@@ -48,17 +48,17 @@ const Navbar = () => {
                 </div>
                 <div className="bg-white shadow-lg sm:px-8   text-[#2976b6] tracking-wide">
                     <ul id="mobileMenu" className=" hidden   flex-wrap  font-bold  mt-20 h-screen  ">
-                        <Link to="/"><li className="flex  justify-center hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
+                        <Link to="/"><li onClick={scrollToTop} className="flex  justify-center hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Home</li></Link>
-                        <Link to='/best-selling'><li className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
+                        <Link to='/best-selling'><li onClick={scrollToTop} className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Best Selling</li></Link>
-                        <Link to='/Packages'><li className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
+                        <Link to='/Packages'><li onClick={scrollToTop} className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Packages</li></Link>
                         <HashLink smooth to="/#OurDestination"><li className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Destination</li></HashLink>
-                        <Link to='/Contact-us'> <li className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
+                        <Link to='/Contact-us'> <li onClick={scrollToTop} className="flex  justify-center mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Contact Us</li></Link>
-                        <Link to='/Contact'> <a href='tel:+916369842254' className="flex justify-center  mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
+                        <Link to='/Contact'> <a onClick={scrollToTop} href='tel:+916369842254' className="flex justify-center  mt-5 hover:bg-[#2976b6] w-80 py-1.5 rounded-lg mx-auto hover:text-white">
                             Call Now</a></Link>
                     </ul>
                 </div>
