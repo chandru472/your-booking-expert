@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 const Best = () => {
     return (
         <div>
-            <div className='grid lg:grid-cols-4 md:grid-cols-2 mt-2  md:p-10 lg:pt-5 gap-8 lg:gap-0'>
+            <div className=' grid lg:grid-cols-4 md:grid-cols-2 mt-2  md:p-10 lg:pt-5 gap-8 lg:gap-0'>
                 <Link to="/best-selling/wonderful-netherlands"><div data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" className='box rounded-lg mx-auto cursor-pointer'>
                     <div className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>

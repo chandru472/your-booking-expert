@@ -17,6 +17,7 @@ import Footer from '../Footer/Footer';
 import Best from '../Best-Selling/Best';
 import Destination from '../Destination/Destination';
 import { Link } from 'react-router-dom';
+import ram from '../../Assets/ram.jpg';
 const Hero = () => {
     const [user, setUser] = useState({
         Name: '',
@@ -106,16 +107,17 @@ const Hero = () => {
         <div className='!scroll-smooth'>
             {/* Hero section */}
             <section className="relative">
-                <video className='absolute inset-0  z-0 video  lg:mt-0 mt-16 w-full md:h-[55rem] h-[18.5rem] object-cover' autoPlay muted loop>
+                <video className='max-sm:hidden absolute inset-0  z-0 video  lg:mt-0 mt-16 w-full md:h-[55rem] h-[18.5rem] object-cover' autoPlay muted loop>
                     <source src={bgvideo}  type='video/mp4'></source>
                 </video>
+                <img src={ram} alt='ram' className='sm:hidden absolute inset-0 mt-16'/>
                 <div className=' mx-auto relative z-10 '>
                     <Navbar />
-                    <div data-aos="zoom-in"  data-aos-duration="2000"  className='lg:pt-40 md:pt-32 pt-36 md:px-10 px-3.5 text-center  ' style={{ fontFamily: '"League spartan",sans-serif' }}>
-                        <h1 className='text-white lg:text-5xl text-3xl lg:font-extrabold font-semibold tracking-tight' style={{ fontFamily: '"League spartan",sans-serif' }}>Get  your <span className='' style={{ color: 'rgb(237, 125, 44)' }}>Tailor-Made</span> Holiday Packages</h1>
-                        <p className='text-white mt-5  lg:mt-10  md:text-xl leading-6 md:leading-8 lg:leading-none text-sm'>Your Booking experts will listen to your travel requirements and provide the iconic Holiday Package for all destinations around Globally.</p>
+                    <div data-aos="zoom-in"  data-aos-duration="2000"  className='max-sm:pt-40 lg:pt-40 md:pt-32 pt-36 md:px-10 px-3.5 text-center  ' style={{ fontFamily: '"League spartan",sans-serif' }}>
+                        <h1 className='max-sm:text-black text-white lg:text-5xl text-3xl lg:font-extrabold font-semibold tracking-tight' style={{ fontFamily: '"League spartan",sans-serif' }}>Get  your <span className='' style={{ color: 'rgb(237, 125, 44)' }}>Tailor-Made</span> Holiday Packages</h1>
+                        <p  className='max-sm:hidden text-white mt-5  lg:mt-10  md:text-xl leading-6 md:leading-8 lg:leading-none text-sm'>Your Booking experts will listen to your travel requirements and provide the iconic Holiday Package for all destinations around Globally.</p>
                     </div>
-                    <div data-aos="flip-right" data-aos-duration="1800" className='border-2 border-[#2976b6] md:mt-12 mt-32 mx-4 md:mx-12 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:border-orange-600 lg:w-[818px] lg:h-[480px] lg:rounded-xl bg-white lg:mt-10 lg:mx-auto' style={{ fontFamily: '"League spartan",sans-serif' }}>
+                    <div data-aos="flip-right" data-aos-duration="1800" className='max-sm:mt-44 border-2 border-[#2976b6] md:mt-12 mt-32 mx-4 md:mx-12 rounded-md shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:border-orange-600 lg:w-[818px] lg:h-[480px] lg:rounded-xl bg-white lg:mt-10 lg:mx-auto' style={{ fontFamily: '"League spartan",sans-serif' }}>
                         <div className='p-4 md:p-8'>
                             <p className='text-lg font-semibold tracking-wide ' style={{ color: 'rgb(237, 125, 44)' }}>Plan your Tailor made trip with us.!</p>
                             <form id="contact-form" onSubmit={handleSubmit}>
