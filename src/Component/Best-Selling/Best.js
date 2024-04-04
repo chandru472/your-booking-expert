@@ -30,7 +30,7 @@ const Best = () => {
                     <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Wonderful Netherlands Package</h1>
-                        <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5 px-2'>from ₹ 5000</p>
+                        <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 -mt-3 px-2'>from ₹ 5000</p>
                     </div>
                     <img src={Netherlands4} className='box-image' />
                 </div></Link>
@@ -57,7 +57,7 @@ const Best = () => {
                     <div  className='mt-40 ml-5'>
                         <p className='  text-blue-700 bg-white w-fit py-1 px-3 text-sm font-semibold text-center rounded-2xl'>2N / 3D</p>
                         <h1 className='text-[22px]  font-light mt-2   text-white'>Astonishing Turkey Family Package</h1>
-                        <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 -mt-3  px-2'>from ₹ 5000</p>
+                        <p className='text-md text-white bg-orange-500 w-fit py-1.5 font-semibold float-right mr-5 mt-5  px-2'>from ₹ 5000</p>
                     </div>
                     <img src={turkey3} className='box-image' />
                 </div></Link>
