@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from '../../Assets/logo2.png'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 import { IoMenu } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
     const scrollToTop = () =>
     {
@@ -17,7 +18,9 @@ const Navbar = () => {
             menu.classList.add('hidden');
         }
     }
+    const [open, setopen] = useState(true)
     return (
+        
         <div className='fixed z-50 w-full'>
             <nav className='bg-white   shadow-[0_3px_10px_rgb(0,0,0,0.2)] ' style={{ fontFamily: '"League spartan",sans-serif' }}>
                 <div className='flex justify-between'>
@@ -25,8 +28,11 @@ const Navbar = () => {
                         <img className='lg:w-32 md:w-24 w-20' src={logo} alt='logo' />
                     </div>
                     < div className='mt-1.5 md:mr-5 mr-2' >
-                        <button className="lg:hidden p-3 " onClick={menuClick}>
-                            <IoMenu className='md:w-8 md:h-8 w-7 h-7 text-[#2976b6]' />
+                        <button className="lg:hidden p-3 "  onClick={menuClick} >
+                            <div onClick={() => setopen(!open)}>
+                            
+                            {open ? <IoMenu className='md:w-8 md:h-8 w-7 h-7 text-[#2976b6]'/> : <RxCross2 className='md:w-8 md:h-8 w-7 h-7 text-[#2976b6]'/>}
+                            </div>
                         </button>
                     </div >
                     <div className='mx-auto my-auto lg:block  hidden '>
